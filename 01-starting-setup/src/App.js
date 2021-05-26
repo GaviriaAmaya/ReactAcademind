@@ -28,9 +28,10 @@ function App() {
   ];
 
   return (
-    expenses.map((expense) => {
-      return <Expenses key={expense.id} title={expense.title} amount={expense.amount} date={expense.date} />
-    })
+    <div>
+      <h2>Let's get started!</h2>
+      <Expenses items={expenses} />
+    </div>
   );
 }
 
